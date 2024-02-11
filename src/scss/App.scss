@@ -1,70 +1,109 @@
 @import "core/reset";
 
 .page {
-  margin: 0px 100px 0px 100px;
+  padding: 7vh;
   text-align: center;
+  font-size: 15px; 
+  @media (max-width: 500px) {
+    font-size: 2.75vw;         
+ }
 }
 .header {
-  padding-top: 60px;
+  
   &__img {
-    width: 800px;
+    width: 40vw;
     margin-top: 30px;
+    @media (max-width: 500px) {
+      width: 70vw; 
+      margin-top: 20px;    
+    } 
   }
+  
 }
 
+
 .filter {
-  margin: 50px 0px 30px 0px;
+  margin: 35px 0px 30px 0px;
   padding-bottom: 20px;
   border-bottom: dotted rgb(4, 162, 247) 6px;
+  @media (max-width: 700px) {
+    margin: 13px 0px 16px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: dotted rgb(4, 162, 247) 2px;
+    padding-bottom: 7px;
+  }
   &__label {
     margin-left: 10px;
-    font-size: 18px;
+    @media (max-width: 500px) {
+      margin: 0px 0px 10px 0px;
+      font-size: 14px;   
+    
+    }
   }
   &__input {
     margin-left: 5px;
     border-radius: 5px;
     border: solid gray 2px;
     height: 25px;
+    @media (max-width: 500px) {
+      margin-top: 3px;
+       
+    }
   }
   &__select {
     width: 166px;
+    margin-top: 6px;  
     margin-left: 5px;
     border-radius: 5px;
     border: solid gray 2px;
     height: 25px;
+    @media (max-width: 500px) {
+      margin-top: 3px;     
+    }
   }
 }
 .list{
+  border-bottom: dotted rgb(4, 162, 247) 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   
     &__li{
         list-style-type: none;
-        border: solid rgb(247, 203, 4) 2px;
+        padding: 10px;
+        border: solid rgb(247, 203, 4) 1px;
         border-radius: 5px;
-        margin-bottom: 20px;
-        
-    }
-    &__quote{
-        font-size: 18px
+        margin-bottom: 16px;
+        width: 400px;
     }
     &__character{
-        font-size: 18px;
         color: rgba(247, 5, 5, 0.826);
     }
 }
 .addCharacter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
     &__title{
-        font-size: 18px;
+       
         margin-bottom: 15px;
         border-bottom: solid gray 2px;
     }
     &__label{
-        display: flex;
+       
         width: 300px;
-        justify-content: space-between;
+       
+      
         margin-top: 7px;
+        @media (max-width: 500px) {
+          margin: 0px 0px 10px 0px;
+          font-size: 14px;   
+        
+        }
     }
     &__input{
         margin-left: 5px;
@@ -76,10 +115,11 @@
 }
 .button{
    margin-top: 15px;
-    padding: 5px 10px 5px 10px;
+    padding: 8px 10px 8px 10px;
     border-radius: 15px;
     border: none;
     background-color: rgb(4, 162, 247);
     color: white;
     font-weight: 700;
+
 }

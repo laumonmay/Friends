@@ -28,7 +28,7 @@ function App() {
 
   const filteredQuotes = 
   quotesList
-  .filter(quote => quote.quote.includes(filterQuote))
+  .filter(quote => quote.quote.toLowerCase().includes(filterQuote.toLowerCase()))
   .filter (quote =>  {
     if(filterCharacter === "Todos"){
       return quotesList;
