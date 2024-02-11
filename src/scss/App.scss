@@ -1,0 +1,85 @@
+@import "core/reset";
+
+.page {
+  margin: 0px 100px 0px 100px;
+  text-align: center;
+}
+.header {
+  padding-top: 60px;
+  &__img {
+    width: 800px;
+    margin-top: 30px;
+  }
+}
+
+.filter {
+  margin: 50px 0px 30px 0px;
+  padding-bottom: 20px;
+  border-bottom: dotted rgb(4, 162, 247) 6px;
+  &__label {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  &__input {
+    margin-left: 5px;
+    border-radius: 5px;
+    border: solid gray 2px;
+    height: 25px;
+  }
+  &__select {
+    width: 166px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: solid gray 2px;
+    height: 25px;
+  }
+}
+.list{
+  
+    &__li{
+        list-style-type: none;
+        border: solid rgb(247, 203, 4) 2px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        
+    }
+    &__quote{
+        font-size: 18px
+    }
+    &__character{
+        font-size: 18px;
+        color: rgba(247, 5, 5, 0.826);
+    }
+}
+.addCharacter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        font-size: 18px;
+        margin-bottom: 15px;
+        border-bottom: solid gray 2px;
+    }
+    &__label{
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        margin-top: 7px;
+    }
+    &__input{
+        margin-left: 5px;
+        border-radius: 5px;
+        border: solid gray 2px;
+        height: 25px;
+       
+    }
+}
+.button{
+   margin-top: 15px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(4, 162, 247);
+    color: white;
+    font-weight: 700;
+}
